@@ -1,6 +1,7 @@
-@import url("Lucida Handwriting Italic.ttf");
+@import url("Lucida");
 body
 {
-font-family:'Lucida Handwriting Italic';
+font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 background-color: rgb(205, 143, 131);
+
 }
