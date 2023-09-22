@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500;600;700&display=swap');
-*
-{
+
+:root{
+  --linear-gradient:linear-gradient(90deg,#38bdf8,#6d28d9,#4c1d95);
+}
+*{
   font-family: 'Allura', cursive;
   font-family: 'Dancing Script', cursive;
 }
@@ -11,5 +14,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background:linear-gradient(90deg,#38bdf8,#6d28d9,#4c1d95);
+  background:var(--linear-gradient);
+  color: #d1d5db;
+}
+#cauculator{
+  background-color: #262626;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 323);
+  display: flex;
+  gap: 25px;
+}
+#cauculator h2{
+  font-size: 35px;
+  position: relative;
+}
+#cauculator h2::before{
+  position: absolute;
+  content:'';
+  height: 3px;
+  width: 150px;
+  background: var(--linear-gradient);
+  bottom: 5px;
+}
+#input_box{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.input-field{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.input-field label{
+  font-size: 25px;
+  color: #c8ccd6;
+  font-weight: 500;
+}
+.input-field input{
+background-color: transparent;
+border: none;
 }
